@@ -375,7 +375,7 @@ end)
 --]]
 
 RegisterNetEvent('nh-context:ordermenu2', function(data)
-    TriggerEvent('nh-context:sendMenu', {
+    exports['qb-menu']:openMenu({
         {
             id = 0,
             header = "| Fridge |",
@@ -438,7 +438,7 @@ RegisterNetEvent('nh-context:DrinkMenu', function(data)
 end)
 --]]
 
--- Till Stuff --
+-- Bill Stuff --
 RegisterNetEvent("qb-uwu:bill")
 AddEventHandler("qb-uwu:bill", function()
     local bill = exports["nh-keyboard"]:KeyboardInput({
